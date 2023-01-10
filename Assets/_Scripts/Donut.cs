@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class Donut : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField]
+    private DonutTypes _donutType;
+    public DonutTypes DonutType { get { return _donutType; } }
+    private Renderer _donutRenderer;
 
-    // Update is called once per frame
-    void Update()
+    private void Awake()
     {
-        
+        _donutType = (DonutTypes)Random.Range(0, 4);
+        _donutRenderer = GetComponent<Renderer>();
+        _donutRenderer.material = Resources.Load("Materials/Donuts/" + _donutType.ToString(), typeof(Material)) as Material;
+
     }
 }
