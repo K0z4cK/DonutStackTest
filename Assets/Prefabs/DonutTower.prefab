@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8070427842270902792}
   - component: {fileID: 5501133769200337370}
+  - component: {fileID: -3258167422596357418}
   m_Layer: 0
   m_Name: DonutTower
   m_TagString: Untagged
@@ -47,6 +48,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _donutPref: {fileID: 2807297292132427034, guid: dd009e8276b67a646800c9b3e34d06b9,
     type: 3}
+--- !u!114 &-3258167422596357418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8070427842270902795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77d1d796c0fd27c4cba446b26e9ac335, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8070427842945917154
 GameObject:
   m_ObjectHideFlags: 0
